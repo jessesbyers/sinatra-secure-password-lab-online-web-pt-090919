@@ -30,7 +30,6 @@ class ApplicationController < Sinatra::Base
     erb :account
   end
 
-
   get "/login" do
     erb :login
   end
@@ -64,5 +63,4 @@ class ApplicationController < Sinatra::Base
       User.find(session[:user_id])
     end
   end
-
 end
